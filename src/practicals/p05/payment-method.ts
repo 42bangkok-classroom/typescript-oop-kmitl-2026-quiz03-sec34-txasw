@@ -1,4 +1,6 @@
-export abstract class PaymentMethod {
+import { Payable } from "./payable";
+
+export abstract class PaymentMethod implements Payable {
     protected accountName: string;
 
     constructor(accountName: string) {
