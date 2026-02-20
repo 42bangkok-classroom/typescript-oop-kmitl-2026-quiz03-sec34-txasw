@@ -11,4 +11,9 @@ export class EWallet extends PaymentMethod {
     getPaymentFee(amount: number): number {
         return amount * 0.01
     }
+
+    processPayment(amount: number): boolean {
+        console.log(`Cutting e-wallet balance: ${amount} Baht (amount คือจำนวนเงินที่ตัด)`)
+        return true
+    }
 }

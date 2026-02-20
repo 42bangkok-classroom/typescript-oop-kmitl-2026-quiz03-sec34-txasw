@@ -1,4 +1,4 @@
-export class PaymentMethod {
+export abstract class PaymentMethod {
     protected accountName: string;
 
     constructor(accountName: string) {
@@ -8,4 +8,9 @@ export class PaymentMethod {
     getAccountName(): string {
         return this.accountName
     }
+
+    abstract getPaymentFee(amount: number): number
+
+    abstract processPayment(amount: number): boolean
+
 }

@@ -11,4 +11,9 @@ export class CreditCard extends PaymentMethod {
     getPaymentFee(amount: number): number {
         return amount * 0.02
     }
+
+    processPayment(amount: number): boolean {
+        console.log(`Cutting credit card balance: ${amount} Baht (amount คือจำนวนเงินที่ตัด)`)
+        return true
+    }
 }
