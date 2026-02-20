@@ -13,7 +13,7 @@ export class CreditCard extends PaymentMethod {
     }
 
     processPayment(amount: number): boolean {
-        console.log(`Cutting credit card balance: ${amount} Baht (amount คือจำนวนเงินที่ตัด)`)
+        console.log(`Cutting credit card balance: ${amount} Baht`)
         return true
     }
 }

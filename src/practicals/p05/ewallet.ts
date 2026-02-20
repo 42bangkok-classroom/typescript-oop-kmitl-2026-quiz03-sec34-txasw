@@ -13,7 +13,7 @@ export class EWallet extends PaymentMethod {
     }
 
     processPayment(amount: number): boolean {
-        console.log(`Cutting e-wallet balance: ${amount} Baht (amount คือจำนวนเงินที่ตัด)`)
+        console.log(`Cutting e-wallet balance: ${amount} Baht`)
         return true
     }
 }
